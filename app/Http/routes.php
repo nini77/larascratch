@@ -21,6 +21,9 @@ Route::get('about','PagesController@about');
 Route::get('cards','CardController@index');
 Route::get('cards/{card}','CardController@show');
 
+Route::get('chart','ChartController@index');
+
+
 Route::get('cards/{note}/edit','NotesController@edit');
 Route::post('cards/{card}/notes','NotesController@store');
 Route::patch('notes/{note}','NotesController@update');

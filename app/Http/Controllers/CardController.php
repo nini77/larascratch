@@ -25,4 +25,5 @@ class CardController extends Controller
         return view('cards.show',compact('card'));
     
     }
+
 }
