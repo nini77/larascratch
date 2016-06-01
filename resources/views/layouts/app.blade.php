@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
     <style>
@@ -54,7 +53,8 @@
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('/cards') }}">Card</a></li>
                     <li><a href="{{ url('/chart') }}">Chart</a></li>
-                    <li><a href="{{ url('/chart') }}">Chart2</a></li>
+                    <li><a href="{{ url('/rader') }}">rader</a></li>
+                    <li><a href="{{ url('/vue1') }}">vue data bind</a></li>
                 <!-- Right Side Of Navbar -->
                 </ul>
                 <ul class="nav navbar-nav navbar-right">

@@ -22,6 +22,8 @@ Route::get('cards','CardController@index');
 Route::get('cards/{card}','CardController@show');
 
 Route::get('chart','ChartController@index');
+Route::get('rader','ChartController@rader');
+Route::get('vue1','VueController@vueDataBind');
 
 
 Route::get('cards/{note}/edit','NotesController@edit');

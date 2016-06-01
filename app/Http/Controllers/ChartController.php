@@ -8,9 +8,13 @@ use App\Http\Requests;
 
 class ChartController extends Controller
 {
-       public function index()
+    public function index()
     {
-    
     	return view('chart.index');
+    }
+
+    public function rader()
+    {
+    	return view('chart.rader');
     }
 }
