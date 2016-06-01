@@ -13,7 +13,9 @@
 
 		datasets:[
 			{
-				data:[30,22,80]
+        	label: "My First dataset",
+          	fillColor:"rgba(220,220,220,0.2)",
+        	data:[30,22,80]
 			}
 		]
 	}
