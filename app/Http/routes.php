@@ -23,7 +23,11 @@ Route::get('cards/{card}','CardController@show');
 
 Route::get('chart','ChartController@index');
 Route::get('rader','ChartController@rader');
-Route::get('vue1','VueController@vueDataBind');
+Route::get('vue1','VueController@dataBind');
+Route::get('vue2','VueController@vueShow');
+Route::get('vue3','VueController@eventHandling');
+Route::get('vue5','VueController@computedProperties');
+Route::get('vue6','VueController@subscriptionPlanExercise');
 
 
 Route::get('cards/{note}/edit','NotesController@edit');

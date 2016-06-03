@@ -8,8 +8,31 @@ use App\Http\Requests;
 
 class VueController extends Controller
 {
-    public function vueDataBind()
+    public function dataBind()
     {
     	return view('vue.dataBind');
     }
+
+	public function vueShow()
+	{
+		return view('vue.show');	
+	}
+
+	public function eventHandling()
+	{
+		return view('vue.eventHandling');	
+	}
+
+	public function computedProperties()
+	{
+		return view('vue.computedProperties');
+	}
+	public function subscriptionPlanExercise()
+	{
+		return view('vue.subscriptionPlanExercise');
+		
+	}
 }
+
+
+
