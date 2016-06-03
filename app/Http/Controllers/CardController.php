@@ -25,5 +25,17 @@ class CardController extends Controller
         return view('cards.show',compact('card'));
     
     }
+    public function store(Request $request)
+    {
+
+        $this->validate($request,[
+                'title' => 'required|min:10'
+            ]);
+
+        $card = new Card;
+        $card->title = $request->title;
+        $card->save();
+        return back();
+    }
 
 }
