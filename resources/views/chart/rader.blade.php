@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="col-md-6 col-md-offset-3">
-	<canvas id="radar" height="450" width="450"></canvas>
+	<canvas id="radar" height="600" width="600"></canvas>
 </div>
 
 <script src=https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js></script>
