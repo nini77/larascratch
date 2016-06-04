@@ -33,6 +33,8 @@ Route::get('vue6','VueController@subscriptionPlanExercise');
 
 
 Route::get('cards/{note}/edit','NotesController@edit');
+Route::get('cards/{note}/delete','NotesController@delete');
+
 Route::post('cards/{card}/notes','NotesController@store');
 Route::patch('notes/{note}','NotesController@update');
 

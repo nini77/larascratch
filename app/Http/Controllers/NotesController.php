@@ -31,6 +31,12 @@ class NotesController extends Controller
     	return view('notes.edit',compact('note'));
     }
 
+    public function delete(Note $note)
+    {
+        $note->delete();
+        return back();
+    }
+
     public function update(Request $request, Note $note)
     {
         $this->validate($request,[
