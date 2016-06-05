@@ -68,7 +68,7 @@
                             <li><a href="{{ url('/vue3') }}">Vue Event Handling</a></li>
                             <li><a href="{{ url('/vue5') }}">Computed Properties</a></li>
                             <li><a href="{{ url('/vue6') }}">Subscription Plan Exercise</a></li>
-
+                            <li><a href="{{ url('/vue7') }}">rendering With Lists</a></li>
                         </ul>
                     </li>
                 </ul>

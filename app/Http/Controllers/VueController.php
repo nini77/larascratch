@@ -32,6 +32,12 @@ class VueController extends Controller
 		return view('vue.subscriptionPlanExercise');
 		
 	}
+	public function renderingWithLists()
+	{
+		return view('vue.renderingWithLists');
+	}
+
+
 }
 
 

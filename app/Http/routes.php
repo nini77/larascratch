@@ -30,7 +30,7 @@ Route::get('vue2','VueController@vueShow');
 Route::get('vue3','VueController@eventHandling');
 Route::get('vue5','VueController@computedProperties');
 Route::get('vue6','VueController@subscriptionPlanExercise');
-
+Route::get('vue7','VueController@renderingWithLists');
 
 Route::get('cards/{note}/edit','NotesController@edit');
 Route::get('cards/{note}/delete','NotesController@delete');
@@ -38,12 +38,6 @@ Route::get('cards/{note}/delete','NotesController@delete');
 Route::post('cards/{card}/notes','NotesController@store');
 Route::patch('notes/{note}','NotesController@update');
 
-Route::get('about',function(){
-	// return 'About page';
-	$people = [];
-	$people = ['Taylor','Matt','Jeffrey'];
-	return view('pages.about',compact('people'));
-});
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
