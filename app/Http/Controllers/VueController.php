@@ -38,6 +38,15 @@ class VueController extends Controller
 	}
 
 
+	public function ajaxWithLists()
+	{
+		// $tasks = \App\Task::latest()->get();
+
+		// return view('vue.ajaxWithLists',compact('tasks'));	
+		return view('vue.ajaxWithLists');	
+
+	}
+
 }
 
 

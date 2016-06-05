@@ -31,6 +31,11 @@ Route::get('vue3','VueController@eventHandling');
 Route::get('vue5','VueController@computedProperties');
 Route::get('vue6','VueController@subscriptionPlanExercise');
 Route::get('vue7','VueController@renderingWithLists');
+Route::get('vue8','VueController@ajaxWithLists');
+
+Route::get('api/tasks',function(){
+	return App\Task::latest()->get();
+});
 
 Route::get('cards/{note}/edit','NotesController@edit');
 Route::get('cards/{note}/delete','NotesController@delete');
