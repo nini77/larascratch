@@ -43,7 +43,7 @@ class NotesController extends Controller
             'body' => 'required|min:10'
         ]);
     	$note->update($request->all());
-    	return back();
+    	return view('notes.edit',compact('note'));
     }
 
 }

@@ -9,7 +9,7 @@
 <script type="text/javascript">
 
 var radarChartData = {
-  labels : ["Laravel","Vue.js","SQL","hlml","css","English","Communication"],
+  labels : ["Laravel","Vue.js","SQL","hlml","css","English","Communication","Infra"],
   datasets : [
    
     {
@@ -17,7 +17,7 @@ var radarChartData = {
       strokeColor : "rgba(151,187,205,1)",
       pointColor : "rgba(151,187,205,1)",
       pointStrokeColor : "#fff",
-      data : [50,50,80,50,50,60,85]
+      data : [50,50,80,50,50,60,85,45]
     }
   ]  
 }
