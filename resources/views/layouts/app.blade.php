@@ -50,16 +50,14 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('/cards') }}">Card</a></li>
-                    <li><a href="{{ url('/chart') }}">Chart</a></li>
-                    <li><a href="{{ url('/rader') }}">Rader</a></li>
+                    <li><a href="{{ url('/rader') }}">Skill Radar</a></li>
+                    <li><a href="{{ url('/cards') }}">laravel sample</a></li>
                 </ul>
 
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                            Vue<span class="caret"></span>
+                            Vue sample<span class="caret"></span>
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
