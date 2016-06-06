@@ -5,18 +5,18 @@
 		<h1>{{$card->title}}</h1>
 
 		<ul class="list-group">
-			@foreach($card->notes as $note)
+			@foreach($notes as $note)
 				<li class="list-group-item">
 				<a href="/cards/{{$note->id}}/edit">{{$note->body}}</a>
 			    <a  style="float: right;color: #b7334f;text-decoration: none;" href="/cards/{{$note->id}}/delete">&nbsp;X</a>
-				<div class="pull-right">{{$note->user->name}}</div>
 				</li>	
 			@endforeach
 		</ul>
+		 {!! $notes->links() !!}
 		<h3>Add a new Note</h3>
 		<form method="POST" action="/cards/{{$card->id}}/notes">
 		<input type="hidden" name="_token" value="{{ csrf_token() }}">
-		<!-- <input type="hidden" name="user_id" value="1"> -->
+		<input type="hidden" name="user_id" value="1">
 
 			<div class="form-group">
 				<textarea name="body" class="form-control">{{old('body')}}</textarea>

@@ -10,9 +10,11 @@ class CardController extends Controller
 {
     public function index()
     {
+
     	// $cards = DB::table('cards')->get();
 
-    	$cards = Card::all();
+    	// $cards = Card::all();
+        $cards = Card::orderBy('id')->paginate(10);
     	return view('cards.index',compact('cards'));
     }
 
@@ -22,7 +24,8 @@ class CardController extends Controller
         // return $card;
 
         $card->load('notes.user');
-        return view('cards.show',compact('card'));
+        $notes = DB::table('notes')->where('card_id',$card->id)->orderBy('id')->paginate(5);
+        return view('cards.show',compact('card','notes'));
     
     }
     public function store(Request $request)
