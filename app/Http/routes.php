@@ -32,6 +32,8 @@ Route::get('vue5','VueController@computedProperties');
 Route::get('vue6','VueController@subscriptionPlanExercise');
 Route::get('vue7','VueController@renderingWithLists');
 Route::get('vue8','VueController@ajaxWithLists');
+Route::get('vue9','VueController@alertComponent');
+
 
 Route::get('api/tasks',function(){
 	return App\Task::latest()->get();

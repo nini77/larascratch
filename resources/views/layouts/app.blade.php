@@ -70,6 +70,8 @@
                             <li><a href="{{ url('/vue6') }}">Subscription Plan Exercise</a></li>
                             <li><a href="{{ url('/vue7') }}">rendering With Lists</a></li>
                             <li><a href="{{ url('/vue8') }}">ajax With Lists </a></li>
+                            <li><a href="{{ url('/vue9') }}">alert Component </a></li>
+
                         </ul>
                     </li>
                 </ul>

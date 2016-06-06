@@ -47,6 +47,10 @@ class VueController extends Controller
 
 	}
 
+	public function alertComponent()
+	{
+		return view('vue.alertComponent');
+	}
 }
 
 
