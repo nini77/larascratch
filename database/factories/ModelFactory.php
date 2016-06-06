@@ -32,7 +32,7 @@ $factory->define(App\Card::class, function (Faker\Generator $faker) {
 $factory->define(App\Note::class, function (Faker\Generator $faker) {
     return [
         'user_id' => 1,
-        'card_id' => 2,
+        'card_id' => $faker->numberBetween($min = 1, $max = 10),
         'body' => $faker->paragraph,
 
     ];
