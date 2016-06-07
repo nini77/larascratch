@@ -28,7 +28,8 @@ class NotesController extends Controller
     }
     public function edit(Note $note)
     {
-    	return view('notes.edit',compact('note'));
+        $success = false;
+    	return view('notes.edit',compact('note','success'));
     }
 
     public function delete(Note $note)
@@ -43,7 +44,8 @@ class NotesController extends Controller
             'body' => 'required|min:10'
         ]);
     	$note->update($request->all());
-    	return view('notes.edit',compact('note'));
+        $success = true;
+    	return view('notes.edit',compact('note','success'));
     }
 
 }
