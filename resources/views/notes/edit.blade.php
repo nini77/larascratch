@@ -32,33 +32,6 @@
 				<span class="Alert__close" @click="show = false">x </span>
 			</div>
 		</template>
-	<script>
-		Vue.component('alert',{
-			template: '#alert-template',
-
-			props: ['type'],
-			data: function () {
-				return {
-					show: true
-				};
-			},
-			computed: {
-				alertClasses: function(){
-					var type = this.type;
-
-					return{
-						'Alert' : true,
-						'Alert--Sucess' : type == 'success',
-						'Alert--Error' : type == 'error'
-					}
-				}
-			}
-
-		});
-		new Vue({
-			el: '#app'
-		
-		});
-	</script>
+		<script src="/js/main.js"></script>
 	</div>
 @stop
