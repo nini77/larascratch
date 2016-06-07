@@ -2,28 +2,6 @@
 
 @section('content')
 
-<style type="text/css">
-	.Alert{
-		position: relative;
-		background: #ddd;
-		border: 1px solid darken(#ddd,10%);
-		padding: 1em;
-	}
-	.Alert--Sucess{
-		background: #7bec7b;
-	}
-	.Alert--Error{
-		background: #ef6a6a;
-	}
-
-	.Alert__close{
-		position: absolute;
-		top: 1em;
-		right: 1em;
-		font-weight: bold;
-		cursor: pointer;
-	}
-</style>
 <div class="col-md-6 col-md-offset-3">
 	<div id="app">
 	<script src ="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.24/vue.js"></script>
