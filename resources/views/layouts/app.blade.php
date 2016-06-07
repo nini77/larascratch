@@ -61,15 +61,27 @@
                         </a>
 
                         <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ url('/vue1') }}">Vue data bind</a></li>
-                            <li><a href="{{ url('/vue2') }}">Vue show</a></li>
-                            <li><a href="{{ url('/vue3') }}">Vue Event Handling</a></li>
+                            <li><a href="{{ url('/vue1') }}">data bind</a></li>
+                            <li><a href="{{ url('/vue2') }}">show</a></li>
+                            <li><a href="{{ url('/vue3') }}">Event Handling</a></li>
                             <li><a href="{{ url('/vue5') }}">Computed Properties</a></li>
                             <li><a href="{{ url('/vue6') }}">Subscription Plan Exercise</a></li>
                             <li><a href="{{ url('/vue7') }}">rendering With Lists</a></li>
                             <li><a href="{{ url('/vue8') }}">ajax With Lists </a></li>
                             <li><a href="{{ url('/vue9') }}">alert Component </a></li>
 
+                        </ul>
+                    </li>
+                </ul>
+                      <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                            Vue sample2<span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ url('/vue10') }}">filter</a></li>
+                            
                         </ul>
                     </li>
                 </ul>

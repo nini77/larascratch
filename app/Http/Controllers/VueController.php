@@ -51,6 +51,12 @@ class VueController extends Controller
 	{
 		return view('vue.alertComponent');
 	}
+
+
+	public function filer()
+	{
+		return view('vue.filter');	
+	}
 }
 
 

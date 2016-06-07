@@ -33,6 +33,7 @@ Route::get('vue6','VueController@subscriptionPlanExercise');
 Route::get('vue7','VueController@renderingWithLists');
 Route::get('vue8','VueController@ajaxWithLists');
 Route::get('vue9','VueController@alertComponent');
+Route::get('vue10','VueController@filer');
 
 
 Route::get('api/tasks',function(){
