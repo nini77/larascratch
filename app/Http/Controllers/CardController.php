@@ -15,7 +15,8 @@ class CardController extends Controller
 
     	// $cards = Card::all();
         $cards = Card::orderBy('id')->paginate(10);
-    	return view('cards.index',compact('cards'));
+        $success = false;
+    	return view('cards.index',compact('cards','success'));
     }
 
     public function show(Card $card)
@@ -42,7 +43,11 @@ class CardController extends Controller
         $card = new Card;
         $card->title = $request->title;
         $card->save();
-        return back();
+
+        $cards = Card::orderBy('id')->paginate(10);
+        $success = true;
+        return view('cards.index',compact('cards','success'));
+        // return back();
     }
 
 }
