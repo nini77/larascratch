@@ -34,10 +34,15 @@ Route::get('vue7','VueController@renderingWithLists');
 Route::get('vue8','VueController@ajaxWithLists');
 Route::get('vue9','VueController@alertComponent');
 Route::get('vue10','VueController@filer');
+Route::get('vue11','VueController@CustomDirective');
 
 
 Route::get('api/tasks',function(){
 	return App\Task::latest()->get();
+});
+
+Route::delete('/posts/{post}',function (App\Post $post){
+	$post->delete();
 });
 
 Route::get('cards/{note}/edit','NotesController@edit');

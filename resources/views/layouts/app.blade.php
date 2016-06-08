@@ -81,7 +81,8 @@
 
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="{{ url('/vue10') }}">filter</a></li>
-                            
+                            <li><a href="{{ url('/vue11') }}">transition</a></li>
+
                         </ul>
                     </li>
                 </ul>

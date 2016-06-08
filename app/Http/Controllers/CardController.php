@@ -30,7 +30,8 @@ class CardController extends Controller
             $join->on('notes.user_id','=','users.id');
         })->where('notes.card_id','=',$id)->orderBy('id')->paginate(5);
 
-        return view('cards.show',compact('card','notes'));
+        $success = false;
+        return view('cards.show',compact('card','notes','success'));
     
     }
     public function store(Request $request)
