@@ -3379,7 +3379,7 @@
 
 		Vue.transition('fade', {
 		  enterClass: 'fadeInLeftBig',
-		  leaveClass: 'fadeOutBig'
+		  leaveClass: 'fadeOutLeftBig'
 		});
 
 		new Vue({
