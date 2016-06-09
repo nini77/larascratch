@@ -24,6 +24,8 @@ class NotesController extends Controller
     	$note = new Note($request->all());
     	$note->user_id = 1;
     	$card->addNote($note);
+
+        session()->flash('flash_message',true);
     	return back();
     }
     public function edit(Note $note)
