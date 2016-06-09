@@ -26,6 +26,7 @@
 				<span class="Alert__close" @click="show = false">x </span>
 			</div>
 		</template>
+			<script src="/js/main.js"></script>
 		@endif
 
 		<h3>Add a new Note</h3>
@@ -45,7 +46,7 @@
 				<li>{{$error}}</li>
 			@endforeach
 		@endif
-			<script src="/js/main.js"></script>
+		
 
 	</div>
 
